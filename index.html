@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SALE | Philipp Plein</title>
+    <link rel="stylesheet" href="./vendor/fonts/fonts.css" />
+    <link rel="stylesheet" href="./pages/index.css" />
+  </head>
+  <body class="page">
+    <header class="header">
+      <!-- На оригинальном сайте иконки меню реализованы как псевдоэлементы с кодом символа из шрифта (? FontAwesome ?),
+        однако у меня данные коды отображают другие символы, поэтому реализовала с помощью похожих физических иконок -->
+      <button class="header__search">Search</button>
+      <a class="header__logo-link">
+        <img class="header__logo" src="./images/svg/logo.svg">
+      </a>
+      <div class="header__navigation">
+        <div class="header__navigation-link-container">
+          <!-- На оригинальном сайте иконки меню реализованы как псевдоэлементы с кодом символа из шрифта (? FontAwesome ?),
+            однако у меня данные коды отображают другие символы, поэтому реализовала с помощью похожих физических иконок -->
+          <button class="header__navigation-link icon-wishlist"></button>
+          <button class="header__navigation-link icon-user"></button>
+          <button class="header__navigation-link icon-bag"></button>
+        </div>
+        <button class="header__navigation-link navigation__burger"></button>
+      </div>
+    </header>
+    <main class="content">
+      <section class="main-poster">
+        <span></span>
+        <h1 class="main-poster__title">Sale</h1>
+        <div class="main-poster__buttons-container">
+          <button class="main-poster__button">Sale Men</button>
+          <button class="main-poster__button">Sale Women</button>
+        </div>
+      </section>
+      <section class="sale-filter">
+        <h2 class="sale-filter__title">Where do you want to start?</h2>
+        <div class="sale-filter__switcher">
+          <button class="sale-filter__switcher-btn sale-filter__switcher-btn_active">Men</button>
+          <button class="sale-filter__switcher-btn">Women</button>
+        </div>
+        <div class="sale-filter__tabs">
+          <button class="sale-filter__tab">View all</button>
+          <button class="sale-filter__tab">Clothing</button>
+          <button class="sale-filter__tab">Denim</button>
+          <button class="sale-filter__tab">T-shirts</button>
+          <button class="sale-filter__tab">Jogging</button>
+          <button class="sale-filter__tab">Shoes</button>
+          <button class="sale-filter__tab">Sneakers</button>
+          <button class="sale-filter__tab">Bags</button>
+          <button class="sale-filter__tab">Accessories</button>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__newsletter">
+        <img class="footer__newsletter-img" src="./images/footer-image.webp">
+        <div class="footer__newsletter-content">
+          <h3 class="footer__newsletter-title">SIGN UP TO SHOP FIRST</h3>
+          <p class="footer__newsletter-subtitle">Sign up for exclusive access to our Promotions plus the Latest Arrivals.</p>
+          <form class="footer__newsletter-form">
+            <input class="footer__newsletter-input" type="text" required name="email" placeholder="Enter Email Address">
+            <!-- <span>Error</span> -->
+            <button class="footer__newsletter-btn" type="submit" name="email">Ok</button>
+          </form>
+        </div>
+        <div class="footer__newsletter-content">
+          <h3 class="footer__newsletter-title">STAY TUNED</h3>
+          <div class="footer__newsletter-icons">
+            <a class="footer__newsletter-link">
+              <img class="footer__newsletter-icon" src="./images/facebook.png">
+            </a>
+            <a class="footer__newsletter-link">
+              <img class="footer__newsletter-icon" src="./images/instagram_icon.png">
+            </a>
+            <a class="footer__newsletter-link">
+              <img class="footer__newsletter-icon" src="./images/social_youtube_icon.png">
+            </a>
+            <a class="footer__newsletter-link">
+              <img class="footer__newsletter-icon" src="./images/svg/icon-tiktok.svg">
+            </a>
+            <a class="footer__newsletter-link">
+              <img class="footer__newsletter-icon" src="./images/twitter_bird_icon.png">
+            </a>
+            <a class="footer__newsletter-link">
+              <img class="footer__newsletter-icon" src="./images/wechat_icon.png">
+            </a>
+            <a class="footer__newsletter-link">
+              <img class="footer__newsletter-icon" src="./images/weibo_icon.png">
+            </a>
+          </div>
+        </div>
+      </div>
+      <ul class="footer__menu">
+        <li class="footer__menu-container">
+          <h3 class="footer__menu-title">OUR WORLD</h3>
+          <ul class="footer__menu-items">
+            <li class="footer__menu-item">
+              <a class="footer__menu-item-link" href="#" target="_blank">ABOUT PHILIPP PLEIN</a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-item-link" href="#" target="_blank">CAMPAIGN</a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-item-link" href="#" target="_blank">COLLECTIONS</a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-item-link" href="#" target="_blank">STORE LOCATOR</a>
+            </li>
+          </ul>
+        </li>
+        <li class="footer__menu-container">
+          <h3 class="footer__menu-title">CUSTOMER CARE</h3>
+          <ul class="footer__menu-items">
+            <li class="footer__menu-item">
+              <a class="footer__menu-item-link" href="#" target="_blank">PAYMENTS</a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-item-link" href="#" target="_blank">DELIVERY AND RETURN</a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-item-link" href="#" target="_blank">PICKUP IN STORE</a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-item-link" href="#" target="_blank">SIZE GUIDE</a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-item-link" href="#" target="_blank">FAQ</a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-item-link" href="#" target="_blank">CONTACT US</a>
+            </li>
+          </ul>
+        </li>
+        <li class="footer__menu-container">
+          <h3 class="footer__menu-title">CORPORATE INFO</h3>
+          <ul class="footer__menu-items">
+            <li class="footer__menu-item">
+              <a class="footer__menu-item-link" href="#" target="_blank">IMPRINT</a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-item-link" href="#" target="_blank">PRIVACY POLICY</a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-item-link" href="#" target="_blank">COOKIE POLICY</a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-item-link" href="#" target="_blank">TERMS & CONDITIONS</a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-item-link" href="#" target="_blank">STOP FAKE</a>
+            </li>
+          </ul>
+        </li>
+        <li class="footer__menu-container">
+          <h3 class="footer__menu-title">COUNTRY / LANGUAGE</h3>
+          <ul class="footer__menu-items">
+            <li class="footer__menu-item"></li>
+            <li class="footer__menu-item"></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="footer__brands">
+        <div class="footer__brand">
+          <a class="footer__brand-link" href="#" target="_blank">
+            <img class="footer__brand-img" src="./images/svg/logo_PS_graffio_footer_PP_black.svg">
+            <div class="footer__brand-title">Philipp Plein Sport</div>
+            <div class="footer__brand-subtitle">Hyper Futuristic Sportswear</div>
+          </a>
+        </div>
+        <div class="footer__brand">
+          <a class="footer__brand-link" href="#" target="_blank">
+            <img class="footer__brand-img" src="./images/svg/diamond.svg">
+            <div class="footer__brand-title">Philipp Plein Outlet</div>
+            <div class="footer__brand-subtitle">Discounted Original And Certified<br>Philipp Plein Products</div>
+          </a>
+        </div>
+        <div class="footer__brand">
+          <a class="footer__brand-link" href="#" target="_blank">
+            <img class="footer__brand-img" src="./images/svg/logo_bb_footer_black.svg">
+            <div class="footer__brand-title">Billionaire</div>
+            <div class="footer__brand-subtitle">The Timeless Luxury Style</div>
+          </a>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        ©<span id="current-year">2024</span> Philipp Plein — All rights reserved
+      </div>
+    </footer>
+    <script></script>
+  </body>
+</html>
