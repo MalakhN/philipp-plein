@@ -1,0 +1,128 @@
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #FFFFFF;
+  width: 100%;
+  z-index: 1000;
+}
+
+.header__wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px 20px 18px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+  'search logo navigation';
+  justify-items: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__search {
+  height: 20px;
+  grid-area: search;
+  justify-self: start;
+  cursor: pointer;
+  padding: 0 0 0 30px;
+  background: url(../../images/svg/magnifier.svg) top left /20px 20px no-repeat transparent;
+  border: none;
+  font-size: clamp(0.8rem, 0.7757rem + 0.1036vw, 0.9rem);
+  line-height: 1;
+  letter-spacing: .75px;
+  text-transform: capitalize;
+}
+
+.header__logo-link {
+  grid-area: logo;
+  cursor: pointer;
+}
+
+.header__logo {
+  display: flex;
+  max-width: 531px;
+}
+
+.header__navigation {
+  grid-area: navigation;
+  justify-self: end;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.header__navigation-link-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.header__navigation-link {
+  display: block;
+  border: none;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.icon-wishlist {
+  background: url(../../images/svg/star.svg) center /19px 19px no-repeat transparent;
+}
+
+.icon-user {
+  background: url(../../images/svg/user.svg) center /19px 19px no-repeat transparent;
+}
+
+.icon-bag {
+  background: url(../../images/svg/bag.svg) center /19px 19px no-repeat transparent;
+}
+
+.navigation__burger {
+  border: none;
+  width: 20px;
+  height: 20px;
+  background: url(../../images/svg/burger-icon.svg) center /25px 25px no-repeat transparent;
+}
+
+@media (max-width: 1024px) {
+  .header__logo {
+    max-width: 375px;
+    max-width: 100%;
+    transition: width .8s cubic-bezier(.5,0,0,1) 0s;
+    will-change: width;
+  }
+}
+
+@media (max-width: 767px) {
+  .header__wrapper {
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas:
+    'logo search navigation';
+    gap: 20px;
+  }
+
+  .header__search {
+    justify-self: end;
+    padding: 0 0 0 20px;
+  }
+
+  .header__search-btn-text {
+    display: none;
+  }
+
+  .header__navigation {
+    gap: 20px;
+  }
+
+  .icon-wishlist {
+    display: none;
+  }
+
+  .icon-user {
+    display: none;
+  }
+}

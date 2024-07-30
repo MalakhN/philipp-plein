@@ -1,0 +1,131 @@
+.sale-filter {
+  width: 100%;
+  margin: 0 auto;
+  padding: 70px 40px;
+  display: grid;
+  grid-template-areas:
+  'title switcher tabs'
+  '. . tabs';
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 20px;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.sale-filter__title {
+  grid-area: title;
+  white-space: nowrap;
+  align-self: center;
+}
+
+.sale-filter__switcher {
+  max-width: 220px;
+  height: 4em;
+  grid-area: switcher;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px #000000 solid;
+  border-radius: 50px;
+}
+
+.sale-filter__switcher-btn {
+  padding: 0 calc(100% / 9);
+  height: 100%;
+  border: 2px solid #FFFFFF;
+  border-radius: 50px;
+  background-color: transparent;
+  text-transform: uppercase;
+  color: rgba(0%, 0%, 0%, 0.7);
+  font-weight: 600;
+  font-size: clamp(0.8rem, 0.6908rem + 0.466vw, 1.25rem);
+  cursor: pointer;
+}
+
+.sale-filter__switcher-btn_active {
+  background: #5e5c5c;
+  color: #FFFFFF;
+}
+
+.sale-filter__tabs {
+  max-width: 920px;
+  grid-area: tabs;
+  grid-row: span 2;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.sale-filter__tab {
+  width: 154px;
+  height: 45px;
+  background-color: transparent;
+  border: 1px solid #747272;
+  border-radius: 5px;
+  color: rgba(0%, 0%, 0%, 0.7);
+  font-weight: 600;
+  font-size: clamp(0.9375rem, 0.8617rem + 0.3236vw, 1.25rem);
+  text-transform: capitalize;
+  text-wrap: nowrap;
+  cursor: pointer;
+}
+
+.sale-filter__tab:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+@media (max-width: 1600px) {
+  .sale-filter {
+    grid-template-areas:
+    'title tabs'
+    'switcher tabs';
+    grid-template-columns: 1fr auto;
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .sale-filter__title {
+    align-self: start;
+  }
+}
+
+@media (max-width: 1440px) {
+  .sale-filter {
+    grid-template-areas:
+    'title title title'
+    'switcher tabs tabs';
+    grid-template-columns: 2fr 3fr 3fr;
+    grid-template-rows: auto 1fr;
+    column-gap: 15px;
+    row-gap: 30px;
+    padding: 50px 0 50px 20px;
+  }
+
+  .sale-filter__title {
+    justify-self: center;
+  }
+
+  .sale-filter__switcher {
+    height: 3.5em;
+    min-width: 160px;
+  }
+
+  .sale-filter__tabs {
+    max-width: 100%;
+    gap: 15px;
+    justify-self: start;
+    justify-content: start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 0 0 5px 0;
+  }
+
+  .sale-filter__tab {
+    height: 3em;
+    padding: 0 20px;
+  }
+}

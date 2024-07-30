@@ -8,28 +8,31 @@
     <link rel="stylesheet" href="./vendor/fonts/fonts.css" />
     <link rel="stylesheet" href="./pages/index.css" />
   </head>
+  <!-- Уточнить по какой формуле вычисляются относительные размеры width/height элементов через calc() -->
+  <!-- Уточнить min и max размер шрифтов для разных разрешений для расчёта по clamp() -->
   <body class="page">
     <header class="header">
       <!-- На оригинальном сайте иконки меню реализованы как псевдоэлементы с кодом символа из шрифта (? FontAwesome ?),
         однако у меня данные коды отображают другие символы, поэтому реализовала с помощью похожих физических иконок -->
-      <button class="header__search">Search</button>
-      <a class="header__logo-link">
-        <img class="header__logo" src="./images/svg/logo.svg">
-      </a>
-      <div class="header__navigation">
-        <div class="header__navigation-link-container">
-          <!-- На оригинальном сайте иконки меню реализованы как псевдоэлементы с кодом символа из шрифта (? FontAwesome ?),
-            однако у меня данные коды отображают другие символы, поэтому реализовала с помощью похожих физических иконок -->
-          <button class="header__navigation-link icon-wishlist"></button>
-          <button class="header__navigation-link icon-user"></button>
-          <button class="header__navigation-link icon-bag"></button>
+      <div class="header__wrapper">
+        <button class="header__search"><span class="header__search-btn-text">Search</span></button>
+        <a class="header__logo-link" href="#">
+          <img class="header__logo" src="./images/svg/logo.svg">
+        </a>
+        <div class="header__navigation">
+          <div class="header__navigation-link-container">
+            <!-- На оригинальном сайте иконки меню реализованы как псевдоэлементы с кодом символа из шрифта (? FontAwesome ?),
+              однако у меня данные коды отображают другие символы, поэтому реализовала с помощью похожих физических иконок -->
+            <button class="header__navigation-link icon-wishlist"></button>
+            <button class="header__navigation-link icon-user"></button>
+            <button class="header__navigation-link icon-bag"></button>
+          </div>
+          <button class="header__navigation-link navigation__burger"></button>
         </div>
-        <button class="header__navigation-link navigation__burger"></button>
       </div>
     </header>
     <main class="content">
       <section class="main-poster">
-        <span></span>
         <h1 class="main-poster__title">Sale</h1>
         <div class="main-poster__buttons-container">
           <button class="main-poster__button">Sale Men</button>
@@ -55,10 +58,11 @@
         </div>
       </section>
     </main>
+    <!-- В футере используется другой шрифт. Узнать какой? -->
     <footer class="footer">
       <div class="footer__newsletter">
         <img class="footer__newsletter-img" src="./images/footer-image.webp">
-        <div class="footer__newsletter-content">
+        <div class="footer__newsletter-content" id="subscription">
           <h3 class="footer__newsletter-title">SIGN UP TO SHOP FIRST</h3>
           <p class="footer__newsletter-subtitle">Sign up for exclusive access to our Promotions plus the Latest Arrivals.</p>
           <form class="footer__newsletter-form">
@@ -67,7 +71,7 @@
             <button class="footer__newsletter-btn" type="submit" name="email">Ok</button>
           </form>
         </div>
-        <div class="footer__newsletter-content">
+        <div class="footer__newsletter-content" id="social">
           <h3 class="footer__newsletter-title">STAY TUNED</h3>
           <div class="footer__newsletter-icons">
             <a class="footer__newsletter-link">
@@ -163,7 +167,7 @@
           </ul>
         </li>
       </ul>
-      <div class="footer__brands">
+      <!-- <div class="footer__brands">
         <div class="footer__brand">
           <a class="footer__brand-link" href="#" target="_blank">
             <img class="footer__brand-img" src="./images/svg/logo_PS_graffio_footer_PP_black.svg">
@@ -188,8 +192,8 @@
       </div>
       <div class="footer__copyright">
         ©<span id="current-year">2024</span> Philipp Plein — All rights reserved
-      </div>
+      </div> -->
     </footer>
-    <script></script>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>

@@ -1,0 +1,143 @@
+.footer__newsletter {
+  margin: 50px 0;
+  background-color: #F7F7F7;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+  'img subscription social';
+}
+
+.footer__newsletter-img {
+  grid-area: img;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+#subscription {
+  grid-area: subscription;
+}
+
+#social {
+  grid-area: social;
+}
+
+.footer__newsletter-content {
+  padding: 20px;
+}
+
+.footer__newsletter-title {
+  font-weight: 700;
+  font-size: 29px;
+  line-height: 35px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  text-align: start;
+}
+
+.footer__newsletter-subtitle {
+  width: 85%;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 35px;
+  text-align: start;
+}
+
+.footer__newsletter-form {
+  width: 85%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  border-bottom: 2px solid #000000;
+}
+
+.footer__newsletter-input {
+  border: none;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+  text-transform: uppercase;
+  padding: 5px 12px 5px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.footer__newsletter-input::placeholder {
+  color: #000000;
+}
+
+.footer__newsletter-btn {
+  padding: 0 30px 0 0;
+  cursor: pointer;
+  background: url(../../images/svg/arrow.svg) center right /16px 16px no-repeat transparent;
+  border: none;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.footer__newsletter-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+}
+
+.footer__newsletter-link {
+  cursor: pointer;
+}
+
+.footer__newsletter-icon {
+  width: 25px;
+  height: 25px;
+}
+
+@media (min-width: 1920px) {
+  .footer__newsletter-content {
+    padding: 85px 20px 20px 75px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .footer__newsletter {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas:
+    'img img'
+    'subscription social';
+  }
+
+  .footer__newsletter-img {
+    max-height: 450px;
+  }
+
+  .footer__newsletter-icons {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer__newsletter {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+    'img'
+    'subscription'
+    'social';
+  }
+
+  .footer__newsletter-img {
+    max-height: 100%;
+  }
+
+  .footer__newsletter-icons {
+    gap: 10px;
+  }
+}

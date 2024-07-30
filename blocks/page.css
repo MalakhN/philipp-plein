@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page {
+  font-family: 'Inter', Arial, sans-serif;
+  background-color: #FFFFFF;
+}

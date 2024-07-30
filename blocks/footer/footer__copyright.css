@@ -1,0 +1,8 @@
+.footer__copyright {
+  padding: 25px 0;
+  color: #666666;
+  text-align: center;
+  font-size: clamp(0.5rem, 0.4272rem + 0.3107vw, 0.8rem);
+  letter-spacing: .75px;
+  line-height: 24px;
+}
