@@ -1,5 +1,4 @@
 .footer__newsletter {
-  margin: 50px 0;
   background-color: #F7F7F7;
   display: grid;
   grid-template-columns: repeat(3, 1fr);

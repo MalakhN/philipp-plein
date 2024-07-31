@@ -1,0 +1,75 @@
+.sale-clothes__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+  'slider banner';
+}
+
+.sale-clothes__slider {
+  grid-area: slider;
+  overflow: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.sale-clothes__slider::-webkit-scrollbar {
+  height: 0;
+}
+
+.sale-clothes__slider-items {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.sale-clothes__slider-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sale-clothes__slider-link {
+  display: flex;
+  flex-direction: column;
+}
+
+.sale-clothes__slider-img {
+  object-fit: cover;
+  object-position: center;
+}
+
+
+
+.sale-clothes__banner-container {
+  grid-area: banner;
+  position: relative;
+}
+
+.sale-clothes__banner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sale-clothes__btn {
+  position: absolute;
+  left: calc(((100vw - 40px) / 2 - 12em) / 2);
+  bottom: 7%;
+}
+
+.sale-clothes__img {
+  height: 100%;
+}
+
+@media (max-width: 767px) {
+  .sale-clothes__container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    'banner'
+    'slider ';
+  }
+
+  .sale-clothes__btn {
+    left: calc(((100vw - 30px) - 12em) / 2)
+  }
+}

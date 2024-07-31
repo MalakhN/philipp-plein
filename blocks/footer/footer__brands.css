@@ -34,3 +34,21 @@
   font-size: 11px;
   line-height: 1rem;
 }
+
+@media (max-width: 767px) {
+  .footer__brands {
+    padding: 25px 0;
+    flex-direction: column;
+    gap: 30px;
+    border: none;
+  }
+
+  .footer__brand:nth-child(2) {
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+  }
+
+  .footer__brand-link {
+    padding: 30px;
+  }
+}

@@ -35,12 +35,12 @@
       <section class="main-poster">
         <h1 class="main-poster__title">Sale</h1>
         <div class="main-poster__buttons-container">
-          <button class="main-poster__button">Sale Men</button>
-          <button class="main-poster__button">Sale Women</button>
+          <button class="main-poster__button banner-btn">Sale Men</button>
+          <button class="main-poster__button banner-btn">Sale Women</button>
         </div>
       </section>
       <section class="sale-filter">
-        <h2 class="sale-filter__title">Where do you want to start?</h2>
+        <h2 class="sale-filter__title heading">Where do you want to start?</h2>
         <div class="sale-filter__switcher">
           <button class="sale-filter__switcher-btn sale-filter__switcher-btn_active">Men</button>
           <button class="sale-filter__switcher-btn">Women</button>
@@ -57,11 +57,63 @@
           <button class="sale-filter__tab">Accessories</button>
         </div>
       </section>
+      <section class="sale-clothes section block-margin-bottom">
+        <h2 class="sale-clothes__title heading">Discover our best looks on <span class="accent">Summer Sale</span></h2>
+        <div class="sale-clothes__container">
+          <div class="sale-clothes__slider">
+            <ul class="sale-clothes__slider-items">
+              <li class="sale-clothes__slider-item">
+                <a class="sale-clothes__slider-link" href="#" target="_blank">
+                  <img class="sale-clothes__slider-img" src="./images/clothes-slider/men/shorts.png">
+                </a>
+              </li>
+              <li class="sale-clothes__slider-item">
+                <a class="sale-clothes__slider-link" href="#" target="_blank">
+                  <img class="sale-clothes__slider-img" src="./images/clothes-slider/men/shirt.png">
+                </a>
+              </li>
+              <li class="sale-clothes__slider-item">
+                <a class="sale-clothes__slider-link" href="#" target="_blank">
+                  <img class="sale-clothes__slider-img" src="./images/clothes-slider/men/sneakers.png">
+                </a>
+              </li>
+              <li class="sale-clothes__slider-item">
+                <a class="sale-clothes__slider-link" href="#" target="_blank">
+                  <img class="sale-clothes__slider-img" src="./images/clothes-slider/men/polo.png">
+                </a>
+              </li>
+              <li class="sale-clothes__slider-item">
+                <a class="sale-clothes__slider-link" href="#" target="_blank">
+                  <img class="sale-clothes__slider-img" src="./images/clothes-slider/men/shorts2.png">
+                </a>
+              </li>
+              <li class="sale-clothes__slider-item">
+                <a class="sale-clothes__slider-link" href="#" target="_blank">
+                  <img class="sale-clothes__slider-img" src="./images/clothes-slider/men/t-shirt.png">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="sale-clothes__banner-container">
+            <a class="sale-clothes__banner" href="#" target="_blank">
+              <img class="sale-clothes__img banner-img" src="./images/MattiaGuolo_PHILIPPLEIN_22092023_LIFESTYLE_02_0571 1.png">
+              <button class="sale-clothes__btn banner-btn">SALE clothes</button>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="sale-shoes section block-margin-bottom">
+        <h2 class="sale-shoes__title heading">Ensure yourself style in every step <span class="accent">Summer Sale</span></h2>
+        <a class="sale-shoes__banner" href="#" target="_blank">
+          <img class="sale-shoes__img banner-img" src="./images/SNEAKERS 1.png">
+          <button class="sale-shoes__btn banner-btn">SALE sneakers</button>
+        </a>
+      </section>
     </main>
     <!-- В футере используется другой шрифт. Узнать какой? -->
     <footer class="footer">
-      <div class="footer__newsletter">
-        <img class="footer__newsletter-img" src="./images/footer-image.webp">
+      <div class="footer__newsletter block-margin-bottom">
+        <img class="footer__newsletter-img" src="./images/MattiaGuolo-20231211-PHILIPP PLEIN_SET-20628 1.png">
         <div class="footer__newsletter-content" id="subscription">
           <h3 class="footer__newsletter-title">SIGN UP TO SHOP FIRST</h3>
           <p class="footer__newsletter-subtitle">Sign up for exclusive access to our Promotions plus the Latest Arrivals.</p>
@@ -167,7 +219,7 @@
           </ul>
         </li>
       </ul>
-      <!-- <div class="footer__brands">
+      <div class="footer__brands">
         <div class="footer__brand">
           <a class="footer__brand-link" href="#" target="_blank">
             <img class="footer__brand-img" src="./images/svg/logo_PS_graffio_footer_PP_black.svg">
@@ -192,8 +244,9 @@
       </div>
       <div class="footer__copyright">
         ©<span id="current-year">2024</span> Philipp Plein — All rights reserved
-      </div> -->
+      </div>
     </footer>
-    <script src="./scripts/script.js"></script>
+    <script src="./scripts/simpleSlider.js"></script>
+    <script src="./scripts/footerMenuScript.js"></script>
   </body>
 </html>

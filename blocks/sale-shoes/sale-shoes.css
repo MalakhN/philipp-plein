@@ -1,0 +1,14 @@
+.sale-shoes {
+  position: relative;
+}
+
+.sale-shoes__banner {
+  width: 100%;
+  cursor: pointer;
+}
+
+.sale-shoes__btn {
+  position: absolute;
+  left: calc((100vw - 12em) / 2);
+  bottom: 7%;
+}

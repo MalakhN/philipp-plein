@@ -33,25 +33,6 @@
   height: calc(60vh / 3);
 }
 
-.main-poster__button {
-  height: 3em;
-  padding: 0 30px;
-  color: #000000;
-  background-color: #FFFFFF;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: clamp(0.8rem, 0.6908rem + 0.466vw, 1.25rem);
-  border: 1px solid #747272;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.main-poster__button:hover {
-  background: #000000;
-  color: #FFFFFF;
-  border-color: #FFFFFF;
-}
-
 @media (max-width: 1024px) {
   .main-poster__buttons-container {
     gap: 20px;
