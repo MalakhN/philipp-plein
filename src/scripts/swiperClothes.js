@@ -6,7 +6,8 @@ var swiper = new Swiper('.sale-clothes__slider', {
   speed: 2000,
   slidesPerView: 1,
   pagination: {
-    el: '.swiper-pagination'
+    el: '.swiper-pagination',
+    clickable: true,
   },
   keyboard: true,
 });
