@@ -14,3 +14,17 @@ var swiperRunway = new Swiper('.sale-runway__slider', {
     }
   },
 });
+
+//Отображаем попапы на карточках последнего слайдера
+const sliderPopupBtns = document.querySelectorAll('.sale-runway__item-button');
+
+for (let i = 0; i < sliderPopupBtns.length; ++i) {
+  const sliderPopupBtn = sliderPopupBtns[i]
+
+  sliderPopupBtn.addEventListener('click', e => {
+    const targetElem = e.target;
+    const openedElem = targetElem.nextElementSibling;
+
+    openedElem.classList.add('popup_opened');
+  });
+}

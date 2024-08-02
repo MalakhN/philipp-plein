@@ -1,3 +1,4 @@
+//Меняем контент при нажатии на кнопки + меняем стили свитчера + устанавливаем слушатели
 const menBtnContents = document.querySelectorAll('.btn-men');
 const womenBtnContents = document.querySelectorAll('.btn-women');
 

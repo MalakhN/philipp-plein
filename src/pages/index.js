@@ -249,17 +249,3 @@ for (let i = 0; i < womenBtnContents.length; ++i) {
   womenBtnContent.onclick = changeContentWomen;
 }
 
-
-
-const sliderPupupBtns = document.querySelectorAll('.sale-runway__item-button');
-
-for (let i = 0; i < sliderPupupBtns.length; ++i) {
-  const sliderPupupBtn = sliderPupupBtns[i]
-
-  sliderPupupBtn.addEventListener('click', e => {
-    const targetElem = e.target;
-    const openedElem = targetElem.nextElementSibling;
-
-    openedElem.classList.add('popup_opened');
-  });
-}

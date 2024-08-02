@@ -15,6 +15,7 @@ var swiperVip = new Swiper('.vip-sale__slider', {
   },
 });
 
+//Выравниваем боковой статичный банер по размеру первого изображения в слайдере
 const sliderImages = document.querySelectorAll('.vip-sale__slider-img');
 const sliderTextContainer = document.querySelector('.vip-sale__text-container');
 
