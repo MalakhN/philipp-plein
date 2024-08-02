@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SALE | Philipp Plein</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link href="./images/favicon.ico" rel="shortcut icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
     <link rel="stylesheet" href="./vendor/fonts/fonts.css" />
     <link rel="stylesheet" href="./pages/index.css" />
   </head>
@@ -35,15 +41,15 @@
       <section class="main-poster">
         <h1 class="main-poster__title">Sale</h1>
         <div class="main-poster__buttons-container">
-          <button class="main-poster__button banner-btn">Sale Men</button>
-          <button class="main-poster__button banner-btn">Sale Women</button>
+          <button class="main-poster__button banner-btn btn-men">Sale Men</button>
+          <button class="main-poster__button banner-btn btn-women">Sale Women</button>
         </div>
       </section>
       <section class="sale-filter">
         <h2 class="sale-filter__title heading">Where do you want to start?</h2>
         <div class="sale-filter__switcher">
-          <button class="sale-filter__switcher-btn sale-filter__switcher-btn_active">Men</button>
-          <button class="sale-filter__switcher-btn">Women</button>
+          <button class="sale-filter__switcher-btn sale-filter__switcher-btn_active btn-men">Men</button>
+          <button class="sale-filter__switcher-btn btn-women">Women</button>
         </div>
         <div class="sale-filter__tabs">
           <button class="sale-filter__tab">View all</button>
@@ -57,42 +63,23 @@
           <button class="sale-filter__tab">Accessories</button>
         </div>
       </section>
+      <section class="vip-sale section block-margin-bottom">
+        <div class="vip-sale__container">
+          <div class="vip-sale__text-container">
+            <p class="vip-sale__text">Exclusive VIP SALE is here.</p>
+            <p class="vip-sale__text">Shop before it opens to the public.</p>
+          </div>
+          <div class="vip-sale__slider swiperVip">
+            <div class="swiper-wrapper" id="vip-sale__wrapper"></div>
+          </div>
+        </div>
+      </section>
       <section class="sale-clothes section block-margin-bottom">
         <h2 class="sale-clothes__title heading">Discover our best looks on <span class="accent">Summer Sale</span></h2>
         <div class="sale-clothes__container">
-          <div class="sale-clothes__slider">
-            <ul class="sale-clothes__slider-items">
-              <li class="sale-clothes__slider-item">
-                <a class="sale-clothes__slider-link" href="#" target="_blank">
-                  <img class="sale-clothes__slider-img" src="./images/clothes-slider/men/shorts.png">
-                </a>
-              </li>
-              <li class="sale-clothes__slider-item">
-                <a class="sale-clothes__slider-link" href="#" target="_blank">
-                  <img class="sale-clothes__slider-img" src="./images/clothes-slider/men/shirt.png">
-                </a>
-              </li>
-              <li class="sale-clothes__slider-item">
-                <a class="sale-clothes__slider-link" href="#" target="_blank">
-                  <img class="sale-clothes__slider-img" src="./images/clothes-slider/men/sneakers.png">
-                </a>
-              </li>
-              <li class="sale-clothes__slider-item">
-                <a class="sale-clothes__slider-link" href="#" target="_blank">
-                  <img class="sale-clothes__slider-img" src="./images/clothes-slider/men/polo.png">
-                </a>
-              </li>
-              <li class="sale-clothes__slider-item">
-                <a class="sale-clothes__slider-link" href="#" target="_blank">
-                  <img class="sale-clothes__slider-img" src="./images/clothes-slider/men/shorts2.png">
-                </a>
-              </li>
-              <li class="sale-clothes__slider-item">
-                <a class="sale-clothes__slider-link" href="#" target="_blank">
-                  <img class="sale-clothes__slider-img" src="./images/clothes-slider/men/t-shirt.png">
-                </a>
-              </li>
-            </ul>
+          <div class="sale-clothes__slider swiper">
+            <div class="swiper-wrapper" id="sale-clothes__wrapper"></div>
+            <div class="swiper-pagination"></div>
           </div>
           <div class="sale-clothes__banner-container">
             <a class="sale-clothes__banner" href="#" target="_blank">
@@ -105,9 +92,23 @@
       <section class="sale-shoes section block-margin-bottom">
         <h2 class="sale-shoes__title heading">Ensure yourself style in every step <span class="accent">Summer Sale</span></h2>
         <a class="sale-shoes__banner" href="#" target="_blank">
-          <img class="sale-shoes__img banner-img" src="./images/SNEAKERS 1.png">
+          <img class="sale-shoes__img banner-img" src="./images/SNEAKERS1.png">
           <button class="sale-shoes__btn banner-btn">SALE sneakers</button>
         </a>
+      </section>
+      <section class="sale-categories section block-margin-bottom">
+        <h2 class="sale-categories__title heading">Your wardrobe’s new evergreen <span class="accent">Summer Sale</span></h2>
+        <div class="sale-categories__slider swiperCategories">
+          <div class="swiper-wrapper" id="sale-categories__wrapper"></div>
+        </div>
+      </section>
+      <section class="sale-runway section block-margin-bottom">
+        <h2 class="sale-runway__title heading">Shop the runway looks <span class="accent">Summer Sale</span></h2>
+        <div class="sale-runway__slider swiperRunway">
+          <!-- Кнопки для открытия попапов можно условно разделить на 4 класса: головной убор, верх, низ и обувь. Таким образом для кнопок можно
+          описать 4 класса позиционирования и присваивать в зависимости от контента изображения -->
+          <div class="swiper-wrapper" id="sale-runway__wrapper"></div>
+        </div>
       </section>
     </main>
     <!-- В футере используется другой шрифт. Узнать какой? -->
@@ -246,7 +247,46 @@
         ©<span id="current-year">2024</span> Philipp Plein — All rights reserved
       </div>
     </footer>
-    <script src="./scripts/simpleSlider.js"></script>
+    <template id="vip-sale__item-template">
+      <div class="vip-sale__slider-item swiper-slide">
+        <a class="vip-sale__slider-link" href="#" target="_blank">
+          <img class="vip-sale__slider-img" src="" alt="">
+          <span class="vip-sale__slider-item-text"></span>
+        </a>
+      </div>
+    </template>
+    <template id="sale-clothes__item-template">
+      <div class="sale-clothes__slider-item swiper-slide">
+        <a class="sale-clothes__slider-link" href="#" target="_blank">
+          <img class="sale-clothes__slider-img" src="">
+        </a>
+      </div>
+    </template>
+    <template id="sale-categories__item-template">
+      <div class="sale-categories__slider-item swiper-slide">
+        <a class="sale-categories__slider-link" href="#" target="_blank">
+          <img class="sale-categories__slider-img" src="">
+          <span class="sale-categories__item-name"></span>
+        </a>
+      </div>
+    </template>
+    <template id="sale-runway__item-template">
+      <div class="sale-runway__slider-item swiper-slide">
+        <img class="sale-runway__slider-img" src="">
+        <button class="sale-runway__item-button product-top"></button>
+        <div class="sale-runway__popup">
+          <a class="sale-runway__popup-link" href="#" target="_blank">
+            <img class="sale-runway__popup-img" src="">
+            <span class="sale-runway__popup-name"></span>
+          </a>
+        </div>
+      </div>
+    </template>
+    <script src="./pages/index.js"></script>
+    <script src="./scripts/swiperVip.js"></script>
+    <script src="./scripts/swiperClothes.js"></script>
+    <script src="./scripts/swiperCategories.js"></script>
+    <script src="./scripts/swiperRunway.js"></script>
     <script src="./scripts/footerMenuScript.js"></script>
   </body>
 </html>

@@ -7,9 +7,15 @@
 
 @import url(../blocks/sale-filter/sale-filter.css);
 
+@import url(../blocks/vip-sale/vip-sale.css);
+
 @import url(../blocks/sale-clothes/sale-clothes.css);
 
 @import url(../blocks/sale-shoes/sale-shoes.css);
+
+@import url(../blocks/sale-categories/sale-categories.css);
+
+@import url(../blocks/sale-runway/sale-runway.css);
 
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/footer__newsletter.css);

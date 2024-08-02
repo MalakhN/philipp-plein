@@ -1,5 +1,5 @@
-const footerMenuTitles = document.querySelectorAll(".footer__menu-title");
-const footerMenuItems = document.querySelectorAll(".footer__menu-items");
+const footerMenuTitles = document.querySelectorAll('.footer__menu-title');
+const footerMenuItems = document.querySelectorAll('.footer__menu-items');
 
 for (let i = 0; i < footerMenuTitles.length; ++i) {
   const footerMenuTitle = footerMenuTitles[i]
@@ -21,3 +21,4 @@ for (let i = 0; i < footerMenuTitles.length; ++i) {
     }
   })
 }
+

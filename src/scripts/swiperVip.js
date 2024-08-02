@@ -1,0 +1,27 @@
+var swiperVip = new Swiper('.vip-sale__slider', {
+  spaceBetween: 10,
+  loop: true,
+  slidesPerView: 1.2,
+  keyboard: true,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    }
+  },
+});
+
+const sliderImages = document.querySelectorAll('.vip-sale__slider-img');
+const sliderTextContainer = document.querySelector('.vip-sale__text-container');
+
+let sliderHeight = sliderImages[0].offsetHeight;
+
+if (window.screen.availWidth >= 550) {
+  sliderTextContainer.style.height = sliderHeight + 'px';
+}
+
+window.addEventListener("resize", e => (sliderHeight = sliderImages[0].offsetWidth));

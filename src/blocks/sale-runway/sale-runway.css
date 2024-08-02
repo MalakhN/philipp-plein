@@ -1,0 +1,72 @@
+.sale-runway {
+  width: 100%;
+}
+
+.sale-runway__slider {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.sale-runway__slider-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.sale-runway__slider-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.sale-runway__item-button {
+  width: 22px;
+  height: 22px;
+  border: none;
+  border-radius: 50%;
+  background: url(../../images/svg/shopping-cart.svg) center center / 15px 15px no-repeat #FFFFFF;
+  position: absolute;
+  cursor: pointer;
+}
+
+.product-top {
+ top: 30%;
+ left: 40%;
+}
+
+.product-bottom {
+  top: 60%;
+  right: 35%;
+ }
+
+.product-shoes {
+  top: 90%;
+  right: 50%;
+}
+
+.popup_opened {
+  display: flex !important;
+  flex-direction: column;
+}
+
+.sale-runway__popup {
+  display: none;
+  width: 200px;
+  position: absolute;
+  top: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+}
+
+.sale-runway__popup-link {
+  display: flex;
+  flex-direction: column;
+  color: #000000;
+}
+
+.sale-runway__popup-img {
+  width: 100%;
+  object-fit: cover;
+}

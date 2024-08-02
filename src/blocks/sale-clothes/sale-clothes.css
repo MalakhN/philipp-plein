@@ -2,43 +2,23 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas:
-  'slider banner';
+  'clothes-slider banner';
 }
 
 .sale-clothes__slider {
-  grid-area: slider;
-  overflow: auto;
-  scroll-behavior: smooth;
-  scrollbar-width: none;
-}
-
-.sale-clothes__slider::-webkit-scrollbar {
-  height: 0;
-}
-
-.sale-clothes__slider-items {
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-}
-
-.sale-clothes__slider-item {
+  grid-area: clothes-slider;
   width: 100%;
-  display: flex;
-  flex-direction: column;
 }
 
 .sale-clothes__slider-link {
   display: flex;
-  flex-direction: column;
+  width: 100%;
+  height: 100%;
 }
 
 .sale-clothes__slider-img {
-  object-fit: cover;
-  object-position: center;
+  width: 100%;
 }
-
-
 
 .sale-clothes__banner-container {
   grid-area: banner;
@@ -66,7 +46,7 @@
     grid-template-columns: 1fr;
     grid-template-areas:
     'banner'
-    'slider ';
+    'clothes-slider';
   }
 
   .sale-clothes__btn {
