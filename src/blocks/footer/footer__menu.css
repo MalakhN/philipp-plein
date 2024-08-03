@@ -8,6 +8,7 @@
 }
 
 .footer__menu-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -27,11 +28,79 @@
   gap: 10px;
 }
 
+/* .footer__menu-item {
+  position: relative;
+} */
+
 .footer__menu-item-link {
   text-decoration: none;
   color: #000000;
   font-size: 11px;
   line-height: 1rem;
+}
+
+.footer__menu-item-link:hover {
+  text-decoration: underline;
+}
+
+.footer__menu-region-btn {
+  text-decoration: underline;
+  position: relative;
+  cursor: pointer;
+}
+
+.footer__menu-region-btn::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  block-size: 10px;
+  background: url(../../images/svg/arrow.svg) center center/10px 10px no-repeat transparent;
+  opacity: 0.5;
+  top: 15%;
+  right: -15px;
+  transform: rotate(90deg);
+}
+
+.one-language::after {
+  background: none;
+  cursor: default;
+}
+
+.footer__menu-region-popup {
+  overflow-y: auto;
+  width: 100%;
+  max-height: 50vh;
+  display: none;
+  position: absolute;
+  top: 25%;
+  left: 0;
+  min-width: 160px;
+  background-color: rgba(0, 0, 0, .85);
+  box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, .1);
+}
+
+.footer__menu-region-popup-items {
+  list-style-type: none;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__menu-region-popup-link {
+  color: #FFFFFF;
+  font-size: 11px;
+  line-height: 1rem;
+  text-decoration: none;
+}
+
+.footer__menu-region-popup-link:hover {
+  text-decoration: underline;
+}
+
+.popup-opened {
+  display: flex;
+  flex-direction: column;
 }
 
 @media (max-width: 1023px) {
@@ -89,10 +158,20 @@
     transition: max-height .2s ease-in 0s;
   }
 
+  #footer__menu-region-container {
+    max-height: 100%;
+    transition: none;
+  }
+
   .footer__menu-item {
     border-bottom: 1px solid #333333;
     padding: 25px 45px;
     font-weight: 500;
+  }
+
+  #footer__menu-region-container .footer__menu-item {
+    border: none;
+    padding: 0 30px 25px 30px;
   }
 
   .footer__menu-item:last-child {
@@ -101,5 +180,29 @@
 
   .footer__menu-item-link {
     font-size: 13px;
+  }
+
+  .footer__menu-region-popup {
+    width: 100%;
+    top: 100%;
+    left: 0;
+  }
+
+  .footer__menu-region-popup-items {
+    padding: 0;
+    gap: 0;
+  }
+
+  .footer__menu-region-popup-item {
+    border-bottom: 1px solid #FFFFFF;
+    padding: 25px 45px;
+    font-weight: 500;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .footer__menu {
+    padding: 50px 0 0;
   }
 }

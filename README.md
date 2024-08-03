@@ -4,7 +4,7 @@
 
 # Description
 
-Landing page in pure JavaScript: responsive design.
+Landing page on pure JavaScript: responsive layout
 
 # Project functionality
 

@@ -25,6 +25,6 @@ for (let i = 0; i < sliderPopupBtns.length; ++i) {
     const targetElem = e.target;
     const openedElem = targetElem.nextElementSibling;
 
-    openedElem.classList.add('popup_opened');
+    openedElem.classList.toggle('popup_opened');
   });
 }

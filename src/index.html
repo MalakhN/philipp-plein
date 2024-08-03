@@ -21,7 +21,7 @@
       <!-- На оригинальном сайте иконки меню реализованы как псевдоэлементы с кодом символа из шрифта (? FontAwesome ?),
         однако у меня данные коды отображают другие символы, поэтому реализовала с помощью похожих физических иконок -->
       <div class="header__wrapper">
-        <button class="header__search"><span class="header__search-btn-text">Search</span></button>
+        <button class="header__search">Search</button>
         <a class="header__logo-link" href="#">
           <img class="header__logo" src="./images/svg/logo.svg">
         </a>
@@ -231,10 +231,27 @@
         </li>
         <li class="footer__menu-container">
           <h3 class="footer__menu-title">COUNTRY / LANGUAGE</h3>
-          <ul class="footer__menu-items">
-            <li class="footer__menu-item"></li>
-            <li class="footer__menu-item"></li>
+          <ul class="footer__menu-items" id="footer__menu-region-container">
+            <li class="footer__menu-item">
+              <span class="footer__menu-item-link footer__menu-region-btn" id="footer__menu-region-btn-country">United Kingdom</span>
+            </li>
+            <li class="footer__menu-item">
+              <span class="footer__menu-item-link footer__menu-region-btn one-language" id="footer__menu-region-btn-language">English</span>
+            </li>
           </ul>
+          <div class="footer__menu-region-popup" id="footer__menu-region-popup-country">
+            <ul class="footer__menu-region-popup-items">
+              <li class="footer__menu-region-popup-item">
+                <a class="footer__menu-region-popup-link" href="#">United Kingdom</a>
+              </li>
+              <li class="footer__menu-region-popup-item">
+                <a class="footer__menu-region-popup-link" href="#">United States</a>
+              </li>
+              <li class="footer__menu-region-popup-item">
+                <a class="footer__menu-region-popup-link" href="#">Uruguay</a>
+              </li>
+            </ul>
+          </div>
         </li>
       </ul>
       <div class="footer__brands">
@@ -301,7 +318,7 @@
     </template>
     <script src="./pages/index.js"></script>
     <script src="./scripts/navDrawer.js"></script>
-    <script src="./scripts/swiperVip.js"></script>
+    <script src="./scripts/swiperVip.js" async></script>
     <script src="./scripts/swiperClothes.js"></script>
     <script src="./scripts/swiperCategories.js"></script>
     <script src="./scripts/swiperRunway.js"></script>

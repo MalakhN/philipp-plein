@@ -19,10 +19,11 @@ var swiperVip = new Swiper('.vip-sale__slider', {
 const sliderImages = document.querySelectorAll('.vip-sale__slider-img');
 const sliderTextContainer = document.querySelector('.vip-sale__text-container');
 
-let sliderHeight = sliderImages[0].offsetHeight;
+let sliderHeight = sliderImages[0].clientHeight;
+console.log(sliderHeight);
 
-if (window.screen.availWidth >= 550) {
+if (document.documentElement.scrollWidth >= 550) {
   sliderTextContainer.style.height = sliderHeight + 'px';
 }
 
-window.addEventListener("resize", e => (sliderHeight = sliderImages[0].offsetWidth));
+window.addEventListener("resize", e => (sliderHeight = sliderImages[0].clientHeight));
