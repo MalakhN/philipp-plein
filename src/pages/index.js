@@ -4,7 +4,8 @@ class Card {
     this._name = item.name;
     this._link = item.link;
     this._linkProduct = item.linkProduct;
-    this._class = item.class;
+    this._classBtn = item.classBtn;
+    this._classPopup = item.classPopup;
     this._templateSelector = templateSelector;
   }
   // Приватный метод для получения копии шаблона карточки слайдера
@@ -36,11 +37,13 @@ class Card {
     this._newCard = this._getTemplate();
     this._imageElement = this._newCard.querySelector("img");
     this._buttonElement = this._newCard.querySelector("button");
+    this._popupElement = this._newCard.querySelector("div");
     this._imagePopupElement = this._newCard.querySelector("div a img");
     this._spanPopupElement = this._newCard.querySelector("div a span");
     this._imageElement.src = this._link;
     this._imageElement.alt = this._name;
-    this._buttonElement.classList = this._class;
+    this._buttonElement.classList = `sale-runway__item-button ${this._classBtn}`;
+    this._popupElement.classList = `sale-runway__popup ${this._classPopup}`;
     this._imagePopupElement.src = this._linkProduct;
     this._imagePopupElement.alt = this._name;
     this._spanPopupElement.textContent = this._name;
@@ -113,20 +116,38 @@ const runwaySliderMenImgs = [
   { link: "./images/runway-slider/men/runway_look_1.png",
     linkProduct: "./images/clothes-slider/men/shirt.png",
     name: "Shirt",
-    class: "sale-runway__item-button product-top" },
+    classBtn: "product-top",
+    classPopup: "product-top-popup"
+  },
   { link: "./images/runway-slider/men/runway_look_2.png",
     linkProduct: "./images/clothes-slider/men/shorts.png",
     name: "Shorts",
-    class: "sale-runway__item-button product-bottom" },
+    classBtn: "product-bottom",
+    classPopup: "product-bottom-popup"
+  },
   { link: "./images/runway-slider/men/runway_look_3.png",
     linkProduct: "./images/clothes-slider/men/sneakers.png",
     name: "Shoes",
-    class: "sale-runway__item-button product-shoes" },
+    classBtn: "product-shoes",
+    classPopup: "product-shoes-popup"
+  },
 ];
 const runwaySliderWomenImgs = [
-  { link: "./images/runway-slider/women/runway_look_1.png", class: "sale-runway__item-button product-top" },
-  { link: "./images/runway-slider/women/runway_look_2.png", class: "sale-runway__item-button product-bottom" },
-  { link: "./images/runway-slider/women/runway_look_3.png", class: "sale-runway__item-button product-bottom" },
+  { link: "./images/runway-slider/women/runway_look_1.png",
+    name: "Shirt",
+    classBtn: "product-top",
+    classPopup: "product-top-popup"
+  },
+  { link: "./images/runway-slider/women/runway_look_2.png",
+    name: "Shorts",
+    classBtn: "product-bottom",
+    classPopup: "product-bottom-popup"
+  },
+  { link: "./images/runway-slider/women/runway_look_3.png",
+    name: "Shoes",
+    classBtn: "product-shoes",
+    classPopup: "product-shoes-popup"
+  },
 ];
 
 //Секции размещения слайдеров

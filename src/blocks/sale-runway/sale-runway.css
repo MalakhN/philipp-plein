@@ -37,12 +37,27 @@
 }
 
 .product-bottom {
-  top: 60%;
+  top: 58%;
   right: 35%;
- }
+}
 
 .product-shoes {
   top: 90%;
+  right: 50%;
+}
+
+.product-top-popup {
+  top: 35%;
+  left: 40%;
+ }
+
+.product-bottom-popup {
+  top: 63%;
+  right: 35%;
+}
+
+.product-shoes-popup {
+  top: 54%;
   right: 50%;
 }
 
@@ -55,18 +70,49 @@
   display: none;
   width: 200px;
   position: absolute;
-  top: 50%;
-  background-color: rgba(255, 255, 255, 0.5);
-  padding: 20px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.5);
+  padding: 10px;
 }
 
 .sale-runway__popup-link {
+  text-decoration: none;
   display: flex;
   flex-direction: column;
   color: #000000;
 }
 
 .sale-runway__popup-img {
+  border-radius: 20px;
   width: 100%;
   object-fit: cover;
+}
+
+.sale-runway__popup-name {
+  padding: 10px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 27px;
+}
+
+@media (max-width: 768px) {
+  .sale-runway__popup {
+    width: 50vw;
+  }
+
+  .product-top-popup {
+    top: 40%;
+    left: 30%;
+   }
+
+  .product-bottom-popup {
+    top: 2%;
+    right: 30%;
+  }
+
+  .product-shoes-popup {
+    top: 33%;
+    right: 20%;
+  }
 }
