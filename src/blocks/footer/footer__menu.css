@@ -53,12 +53,24 @@
   content: '';
   position: absolute;
   width: 10px;
-  block-size: 10px;
+  height: 10px;
   background: url(../../images/svg/arrow.svg) center center/10px 10px no-repeat transparent;
   opacity: 0.5;
   top: 15%;
   right: -15px;
   transform: rotate(90deg);
+}
+
+.footer__menu-region-btn_active::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: url(../../images/svg/arrow.svg) center center/10px 10px no-repeat transparent;
+  opacity: 0.5;
+  top: 15%;
+  right: -15px;
+  transform: rotate(-90deg);
 }
 
 .one-language::after {

@@ -11,6 +11,10 @@
   background-color: #FFFFFF;
 }
 
+.page_under-menu {
+  overflow: hidden;
+}
+
 .section {
   display: flex;
   flex-direction: column;

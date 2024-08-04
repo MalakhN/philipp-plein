@@ -67,6 +67,10 @@
   text-overflow: ellipsis;
 }
 
+.footer__newsletter-input:focus-visible {
+  outline: none;
+}
+
 .footer__newsletter-input::placeholder {
   color: #000000;
 }

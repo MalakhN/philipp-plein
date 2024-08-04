@@ -28,6 +28,7 @@ for (let i = 0; i < (footerMenuTitles.length - 1); ++i) {
 // Открываем или закрываем попап выбора страны
 countryMenuBtn.addEventListener('click', e => {
   countryMenuPopup.classList.toggle('popup-opened');
+  countryMenuBtn.classList.toggle('footer__menu-region-btn_active');;
 })
 
 window.addEventListener('scroll', e => {
