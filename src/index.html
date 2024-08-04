@@ -135,10 +135,12 @@
         <div class="footer__newsletter-content" id="subscription">
           <h3 class="footer__newsletter-title">SIGN UP TO SHOP FIRST</h3>
           <p class="footer__newsletter-subtitle">Sign up for exclusive access to our Promotions plus the Latest Arrivals.</p>
-          <form class="footer__newsletter-form">
-            <input class="footer__newsletter-input" type="text" required name="email" placeholder="Enter Email Address">
-            <!-- <span>Error</span> -->
-            <button class="footer__newsletter-btn" type="submit" name="email">Ok</button>
+          <form class="footer__newsletter-form" name="email" method="POST" novalidate>
+            <fieldset class="footer__newsletter-form-container">
+              <input class="footer__newsletter-input" type="email" name="email" placeholder="Enter Email Address" required>
+              <button class="footer__newsletter-btn" id="newsletter-input" type="submit" name="email">Ok</button>
+            </fieldset>
+            <span class="footer__newsletter-input-error" id="email-error"></span>
           </form>
         </div>
         <div class="footer__newsletter-content" id="social">
@@ -322,6 +324,7 @@
     <script src="./scripts/swiperClothes.js"></script>
     <script src="./scripts/swiperCategories.js"></script>
     <script src="./scripts/swiperRunway.js"></script>
+    <script src="./scripts/formNewsletter.js"></script>
     <script src="./scripts/footerMenuScript.js"></script>
   </body>
 </html>

@@ -21,12 +21,16 @@ const sliderTextContainer = document.querySelector('.vip-sale__text-container');
 
 let sliderHeight = sliderImages[0].clientHeight;
 
-function sliderEven () {
+function sliderEven() {
   if (document.documentElement.scrollWidth >= 550) {
     sliderTextContainer.style.height = sliderHeight + 'px';
   }
 }
 
-window.onload = sliderEven ();
+window.addEventListener("load", e => {
+  sliderEven();
+});
 
-window.addEventListener("resize", e => (sliderHeight = sliderImages[0].clientHeight));
+window.addEventListener("resize", e => {
+  sliderEven();
+});
