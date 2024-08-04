@@ -1,17 +1,13 @@
-# Project name
+# Landing-page layout for Sale (Philipp Plein) #
 
-**Landing-page layout for Sale (Philipp Plein)**
+**Landing page on pure JavaScript: responsive layout**
 
-# Description
-
-Landing page on pure JavaScript: responsive layout
-
-# Project functionality
+## Project functionality ##
 
 - Sliders with content loaded from the data array
 - Automatic page content switching depending on the selected products category (gender)
 
-# Technology stack
+## Technology stack ##
 
 - Flexbox-layout
 - Grid-layout
