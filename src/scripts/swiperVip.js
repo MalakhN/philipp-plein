@@ -27,10 +27,10 @@ function sliderEven() {
   }
 }
 
-window.addEventListener("load", e => {
+window.addEventListener("load", (event) => {
   sliderEven();
 });
 
-window.addEventListener("resize", e => {
+window.addEventListener("resize", (event) => {
   sliderEven();
 });

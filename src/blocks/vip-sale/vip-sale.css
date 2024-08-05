@@ -8,6 +8,7 @@
 
 .vip-sale__text-container {
   width: 100%;
+  min-height: 92%;
   grid-area: headers;
   display: flex;
   flex-direction: column;
@@ -57,6 +58,7 @@
 
   .vip-sale__text-container {
     width: 100%;
+    min-width: 100%;
     padding: 5%;
     gap: 30px;
   }
